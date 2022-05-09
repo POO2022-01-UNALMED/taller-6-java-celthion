@@ -111,11 +111,11 @@ public class Vehiculo {
 	}
 	
 		
-	public int getCantidadVehiculos() {
+	public static int getCantidadVehiculos() {
 		return Vehiculo.cantidadVehiculos;
 	}
 	
-	public void setCantidadVehiculos(int xd) {
+	public static void setCantidadVehiculos(int xd) {
 		Vehiculo.cantidadVehiculos = xd;
 	
 	}
