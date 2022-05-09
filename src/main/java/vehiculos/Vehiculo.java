@@ -11,7 +11,7 @@ public class Vehiculo {
 	private String traccion;
 	private Fabricante fabricante;
 	
-	protected int cantidadVehiculos;
+	protected static int cantidadVehiculos;
 	protected int cantidadCamionetas;
 	protected int cantidadCamiones;
 	protected int cantidadAutomoviles;
@@ -110,12 +110,14 @@ public class Vehiculo {
 		this.fabricante = xd;
 	}
 	
+		
 	public int getCantidadVehiculos() {
 		return cantidadVehiculos;
 	}
 	
 	public void setCantidadVehiculos(int xd) {
 		this.cantidadVehiculos = xd;
+	
 	}
 	
 	
