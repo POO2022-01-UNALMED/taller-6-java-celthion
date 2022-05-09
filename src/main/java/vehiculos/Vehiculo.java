@@ -6,7 +6,7 @@ public class Vehiculo {
 	private int puertas;
 	private double velocidadMaxima;
 	private String nombre;
-	private double precio;
+	private int precio;
 	private double peso;
 	private String traccion;
 	private Fabricante fabricante;
@@ -17,7 +17,7 @@ public class Vehiculo {
 	protected int cantidadAutomoviles;
 	
 	
-	public Vehiculo(String placa, int puertas, double velocidadMaxima, String nombre, double precio, double peso, String traccion, Fabricante fabricante, int cantidadVehiculos) {
+	public Vehiculo(String placa, int puertas, double velocidadMaxima, String nombre, int precio, double peso, String traccion, Fabricante fabricante) {
 		
 		this.placa = placa;
 		this.puertas= puertas;
@@ -78,11 +78,11 @@ public class Vehiculo {
 		this.nombre = xd;
 	}
 	
-	public double getPrecio() {
+	public int getPrecio() {
 		return precio;
 	}
 	
-	public void setPrecio(double xd) {
+	public void setPrecio(int xd) {
 		this.precio = xd;
 	}
 	
