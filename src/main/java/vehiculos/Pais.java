@@ -17,7 +17,7 @@ public class Pais {
 		this.nombre = xd;
 	}
 	
-	public int paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		return 2;
 	}
 	
