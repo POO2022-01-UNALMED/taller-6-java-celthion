@@ -12,9 +12,9 @@ public class Vehiculo {
 	private Fabricante fabricante;
 	
 	protected static int cantidadVehiculos;
-	protected int cantidadCamionetas;
-	protected int cantidadCamiones;
-	protected int cantidadAutomoviles;
+	protected static int cantidadCamionetas;
+	protected static int cantidadCamiones;
+	protected static int cantidadAutomoviles;
 	
 	
 	public Vehiculo(String placa, int puertas, double velocidadMaxima, String nombre, int precio, double peso, String traccion, Fabricante fabricante) {
@@ -112,11 +112,11 @@ public class Vehiculo {
 	
 		
 	public int getCantidadVehiculos() {
-		return cantidadVehiculos;
+		return Vehiculo.cantidadVehiculos;
 	}
 	
 	public void setCantidadVehiculos(int xd) {
-		this.cantidadVehiculos = xd;
+		Vehiculo.cantidadVehiculos = xd;
 	
 	}
 	
