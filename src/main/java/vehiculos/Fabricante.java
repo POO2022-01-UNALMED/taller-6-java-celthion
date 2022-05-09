@@ -25,5 +25,11 @@ public class Fabricante {
 	public void setPais(Pais xd) {
 		this.pais = xd;
 	}
+	
+	public int fabricaMayorVentas() {
+		
+	
+		return 2;
+	}
 
 }
