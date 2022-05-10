@@ -1,5 +1,7 @@
 package vehiculos;
 
+import java.util.HashMap;
+
 public class Pais {
 	
 	private String nombre;
@@ -18,7 +20,29 @@ public class Pais {
 	}
 	
 	public static Pais paisMasVendedor() {
-		return 2;
+		
+		
+		
+		HashMap<Pais, Integer> mapa = new HashMap<>();
+		
+		for (int x = 0; x < Vehiculo.paises.size(); x++) {
+			Pais paises = Vehiculo.paises.get(x);
+			if (mapa.containsKey(paises)) {
+				mapa.put(paises, mapa.get(paises) + 1);
+			} else {
+				mapa.put(paises, 1);
+			}
+		}
+		Pais moda = null;
+		int mayor = 0;
+		for (HashMap.Entry<Pais, Integer> entry : mapa.entrySet()) {
+			if (entry.getValue() > mayor) {
+				mayor = entry.getValue();
+				moda = entry.getKey();
+			}
+		}
+		
+		return moda;
 	}
 	
 
